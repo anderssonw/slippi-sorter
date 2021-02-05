@@ -17,8 +17,12 @@ Node >=14 https://nodejs.org/en/download/
 ### Config
 
 yourCodeHere: Your slippi connect code
+
 slippiDir: Absolute address to Slippi folder
+
 players: array of players
 
+
 folderName: Name the folder for that player, ex. "Vs. Armada"
+
 code: Connect code for that player, ex. "LEFFEN#0"
