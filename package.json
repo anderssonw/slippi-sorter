@@ -1,0 +1,15 @@
+{
+  "name": "slippi-sorter",
+  "version": "1.0.0",
+  "description": "Sorts slippi files in given folder to folders based on connect code.",
+  "main": "sorter.js",
+  "dependencies": {
+    "fs-extra": "^9.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
