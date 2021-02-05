@@ -8,11 +8,11 @@ Node >=14 https://nodejs.org/en/download/
 
 ## Tutorial
 
-1. git clone https://github.com/anderssonw/slippi-sorter/
-2. cd slippi-sorter
-3. npm install
+1. `git clone https://github.com/anderssonw/slippi-sorter/`
+2. `cd slippi-sorter`
+3. `npm install`
 4. setup config, see next section
-5. node sorter.js
+5. `node sorter.js`
 
 ### Config
 
