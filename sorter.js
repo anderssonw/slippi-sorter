@@ -2,6 +2,8 @@ const { default: SlippiGame } = require("@slippi/slippi-js");
 const fs = require("fs-extra");
 const config = require("./config.json");
 
+let count = 0;
+
 checkConfig();
 
 const files = fs.readdirSync(config.slippiDir);
@@ -27,12 +29,12 @@ if (slippiFiles.length != 0) {
 
   games.forEach((game) => {
     let metaData = game.getMetadata();
-    let slpPlayers = metaData.players;
+    let slpPlayers = Object.values(metaData.players);
 
     //Don't handle doubles
     if (slpPlayers.length > 2) return;
 
-    let otherSlpPlayer = Object.values(slpPlayers).filter((player) => {
+    let otherSlpPlayer = slpPlayers.filter((player) => {
       return player.names.code != config.yourCodeHere;
     })[0];
 
@@ -41,6 +43,7 @@ if (slippiFiles.length != 0) {
     });
 
     if (chosenPlayers.length == 1) {
+      count++;
       let slpFileName = game.getFilePath().split("\\").pop();
       fs.move(
         game.getFilePath(),
@@ -55,6 +58,7 @@ if (slippiFiles.length != 0) {
       );
     }
   });
+  console.log("Sorted " + count + " slippi files");
 } else {
   console.log("No slippi files to sort in given folder");
 }
