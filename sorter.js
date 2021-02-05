@@ -15,6 +15,8 @@ const games = slippiFiles.map((fileName) => {
 
 // Get metadata - start time, platform played on, etc
 games.forEach((game) => {
+  let metaData = game.getMetadata();
+  if (metaData == null) return;
   let slpPlayers = game.getMetadata().players;
   if (slpPlayers.length > 2) return;
   let otherSlpPlayer = Object.values(slpPlayers).filter((player) => {
