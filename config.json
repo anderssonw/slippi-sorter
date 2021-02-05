@@ -1,0 +1,14 @@
+{
+  "yourCodeHere": "CODE#420",
+  "slippiDir": "C:\\Users\\USERNAME_HERE\\Documents\\Slippi\\",
+  "players": [
+    {
+      "folderName": "vs001Player",
+      "code": "PLAY#001"
+    },
+    {
+      "folderName": "vs002Player",
+      "code": "PLAY#002"
+    }
+  ]
+}
