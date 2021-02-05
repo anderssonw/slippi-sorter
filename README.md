@@ -6,7 +6,7 @@ Sorts slippi files in given folder to folders based on connect code.
 
 ### Requirements
 
-Node >=14 https://nodejs.org/en/download/
+Node >=12 https://nodejs.org/en/download/
 
 ## Tutorial
 
