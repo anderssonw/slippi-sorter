@@ -19,7 +19,9 @@ if (slippiFiles.length != 0) {
     .map((fileName) => {
       let slippiGame = new SlippiGame(config.slippiDir + "\\" + fileName);
 
-      if (slippiGame.getMetadata()) {
+      let metaData = slippiGame.getMetadata();
+
+      if (metaData && metaData.lastFrame > 0) {
         return slippiGame;
       }
 
